@@ -1,0 +1,35 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.shopping-bag-container {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #f8f9fa;
+}
+
+.footer i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.footer p {
+    margin: 0;
+}

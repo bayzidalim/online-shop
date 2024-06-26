@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/favicon_io/apple-touch-icon.png" width="30" height="30" alt="Logo">
+        </a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <div>
+            <button class="btn btn-outline-secondary mr-2" type="button">
+                <i class="fas fa-user"></i>
+            </button>
+            <button class="btn btn-outline-secondary mr-2" type="button">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+            <button class="btn btn-outline-secondary" type="button">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="shopping-bag-container">
+            <h2>Shopping Bag</h2>
+            <p><strong>2 items</strong> in your bag.</p>
+            
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://via.placeholder.com/150" class="card-img" alt="Product Image">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Floral Print Wrap Dress</h5>
+                                    <p class="card-text">WOMEN</p>
+                                    <p class="card-text"><small class="text-muted">Color: Blue | Size: 42</small></p>
+                                    <p class="card-text">$20.50</p>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary" type="button">-</button>
+                                        </div>
+                                        <input type="text" class="form-control" value="2" aria-label="Quantity">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button">+</button>
+                                        </div>
+                                    </div>
+                                    <p class="card-text"><strong>$41.00</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="https://via.placeholder.com/150" class="card-img" alt="Product Image">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Floral Print Wrap Dress</h5>
+                                    <p class="card-text">WOMEN</p>
+                                    <p class="card-text"><small class="text-muted">Color: Blue | Size: 42</small></p>
+                                    <p class="card-text">$30.50</p>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary" type="button">-</button>
+                                        </div>
+                                        <input type="text" class="form-control" value="1" aria-label="Quantity">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button">+</button>
+                                        </div>
+                                    </div>
+                                    <p class="card-text"><strong>$30.50</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Calculated Shipping</h5>
+                            <form>
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select class="form-control" id="country">
+                                        <option>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State / City</label>
+                                    <input type="text" class="form-control" id="state">
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip">ZIP Code</label>
+                                    <input type="text" class="form-control" id="zip">
+                                </div>
+                                <button type="button" class="btn btn-dark btn-block">Update</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Coupon Code</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="coupon">Coupon Code</label>
+                                    <input type="text" class="form-control" id="coupon">
+                                </div>
+                                <button type="button" class="btn btn-dark btn-block">Apply</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Cart Total</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cart Subtotal: <span class="float-right">$71.50</span></li>
+                                <li class="list-group-item">Design by Fluttertop: <span class="float-right">Free</span></li>
+                                <li class="list-group-item">Discount: <span class="float-right">-$4.00</span></li>
+                                <li class="list-group-item"><strong>Cart Total: <span class="float-right">$67.50</span></strong></li>
+                            </ul>
+                            <button type="button" class="btn btn-warning btn-block mt-3">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <i class="fas fa-truck"></i>
+                    <p>Free Shipping<br>When you spend $50+</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>Call Us Anytime<br>+34 555 5555</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-comments"></i>
+                    <p>Chat With Us<br>We offer 24-hour chat support</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-gift"></i>
+                    <p>Gift Cards<br>For your loved one, in any amount</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
